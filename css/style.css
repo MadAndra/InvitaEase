@@ -1,0 +1,112 @@
+body {
+  background-image: url("../img/bgweb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar.scroll {
+  background-color: white;
+}
+#navbarNav {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nav-item {
+  padding-right: 15%;
+}
+
+.header {
+  padding-top: 8%;
+  height: 100vh;
+}
+.fitur > div > div > div.col {
+  padding-top: 5%;
+}
+
+.fitur > div > div > div > div.card {
+  border-radius: 15px;
+}
+.fitur {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.paket {
+  height: 200vh;
+}
+
+.paket > div > div > div.col-md-6 {
+  padding-top: 5%;
+}
+
+.paket > div > div > div > div.card {
+  border-radius: 20px;
+}
+
+.footer {
+  background-color: #57c5b6;
+}
+
+.footer > div > div.row {
+  padding-top: 5%;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("../img/bgmobile.png");
+    /* Atur properti lain sesuai kebutuhan */
+  }
+  .col img {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitur {
+    width: auto;
+    height: auto;
+  }
+
+  .paket {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fitur > div > div > div > div.card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .card > img {
+    width: 50%;
+  }
+  .card > div.card-block {
+    padding: 5%;
+  }
+  .fitur {
+    width: 100%;
+  }
+
+  .paket {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paket > div > div > div > div.card {
+    width: 100%;
+    max-width: 100%;
+    font-size: small;
+    display: block;
+  }
+  .card > img {
+    width: 50%;
+  }
+}
